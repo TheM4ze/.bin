@@ -17,4 +17,5 @@ else
         echo "No change."
 fi
 
-echo  All cores will be used during building and compression 
+
+echo  *** All cores will be used during building and compression ***
