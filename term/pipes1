@@ -28,7 +28,8 @@
 
 W=$(tput cols) H=$(tput lines)
 # maximal random value + 1
-M=32768
+M=75436
+
 
 SETS=('╱╲' '/\')
 COLORS=(31 32 33 34 35 36 37)
@@ -151,7 +152,7 @@ while :; do
     # 3: x+1 y+1
     ((xn = e < 2 ? x + 1 : x - 1))
     ((yn = d < 2 ? y - 1 : y + 1))
-    
+
     # adjust position and change color?
     ((d < 2 && y == 0)) && ((yn--, CC=1))
     ((e > 1 && x == 0)) && ((xn--, CC=1))
@@ -184,4 +185,3 @@ while :; do
 done
 
 do_exit
-
