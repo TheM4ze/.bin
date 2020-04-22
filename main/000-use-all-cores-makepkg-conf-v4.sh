@@ -2,18 +2,7 @@
 # credits to Soehub
 # https://gist.github.com/soehub/fc07b86e2292c562328ee0dc2aadf740
 set -e
-##################################################################################################################
-# Author	:	Erik Dubois
-# Website	:	https://www.erikdubois.be
-# Website	:	https://www.arcolinux.info
-# Website	:	https://www.arcolinux.com
-# Website	:	https://www.arcolinuxd.com
-# Website	:	https://www.arcolinuxforum.com
-##################################################################################################################
-#
-#   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
-#
-##################################################################################################################
+
 
 numberofcores=$(grep -c ^processor /proc/cpuinfo)
 
@@ -29,6 +18,4 @@ else
 fi
 
 
-echo "################################################################"
-echo "###  All cores will be used during building and compression ####"
-echo "################################################################"
+echo  "*** All cores will be used during building and compression ***"
