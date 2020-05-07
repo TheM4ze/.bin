@@ -11,7 +11,3 @@ sudo gpasswd -a $choice autologin
 
 sudo sed -i 's/'#autologin-user='/'autologin-user=$choice'/g' /etc/lightdm/lightdm.conf
 sudo sed -i 's/'#autologin-session='/'autologin-session=berry'/g' /etc/lightdm/lightdm.conf
-
-echo "################################################################"
-echo "####        You can now autologin - reboot to check       ######"
-echo "################################################################"
